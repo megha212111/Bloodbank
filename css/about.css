@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+.random{
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+}
+.about{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+ h1{
+    text-align: center;
+    padding-bottom: 15px;
+    color: red;
+    text-shadow:  0 5px 10px rgba(0,0,0,.3);
+    font-size: 40px;
+}
+
+.about .left{
+    /* margin: auto; */
+    /* justify-content: right; */
+    width:45%;
+    height:100%;
+    padding: 10px;
+    text-align: justify;
+}
+.about .left p{
+  word-spacing: 5px;
+  font-size: 20px;
+}
+
+.about .right{
+    width:45%;
+    height:100%;
+    padding: 10px;
+}
+.about .right .about_img{
+width:100%;
+height:100%;
+}
+.about .right .about_img img{
+    width: 100%;
+    height: 100%;
+}
+.space1{
+    background-color: antiquewhite;
+    height: 40px;
+    width: 100%;
+}
+.foot{
+    background-color:whitesmoke;
+    color: white;
+    width: 100%;
+    height:95px;
+}
+.foot h4{
+ color: white;
+}
+@media (max-width:1060px) {
+    .random{
+        width: 100%;
+        height: 1000px;
+    }
+    .about{
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 80%;
+        margin: 0px;
+    }
+    .about .right{
+        width:80%;
+        height:50%;
+        padding:10px;
+    }
+
+    .about .left{
+        width:80%;
+        height:50%;
+        margin-top: 20px;
+        padding-top: 20px;
+        text-align: justify;
+        box-sizing: content-box;
+    }
+    .about .left p{
+        width: fit-content;
+        font-size: 20px;
+    }
+
+}
+@media (max-width:616px) {
+    .random{
+        width: 100%;
+        height:800px;
+    }
+    .about{
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        margin: 0px;
+    }
+    .about .left {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .about .left p{
+        text-align:justify;
+        width: fit-content;
+        font-size: 18px;
+    }
+    .about .right{
+        justify-content: flex-end;
+        width:80%;
+        height:45%;
+        padding:10px;
+    }
+}
+@media (max-width:428px) {
+    .random{
+        width: 100%;
+        height:1000px;
+    }
+    .about .left {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .about .left p{
+        width: fit-content;
+        font-size: 18px;
+    }
+    .about .right{
+        width:80%;
+        height:auto;
+        padding:10px;
+    }
+}

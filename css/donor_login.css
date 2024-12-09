@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(45deg, #FF7F50, #FF6347, #FF4500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    width: 350px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content h1 {
+    color: #FF4500;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content hr {
+    margin-bottom: 20px;
+    border: 1px solid #FF4500;
+}
+
+.field {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 2px solid #FF4500;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.field:focus {
+    border-color: #FF6347;
+}
+
+.input {
+    width: 100%;
+    height: 45px;
+    background-color: #FF4500;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input:hover {
+    background-color: #FF6347;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #FF4500;
+    padding: 10px;
+}
+
+a:hover {
+    color: #FF6347;
+}
+
+.frgpwd, .signup {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.see {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.show {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+label {
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+}
+
+.l1, .l2 {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 520px) {
+    .content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .field {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .show {
+        width: 20px;
+        height: 20px;
+    }
+
+    .seem {
+        font-size: 14px;
+    }
+}

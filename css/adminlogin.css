@@ -1,0 +1,171 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background-color: #eaeaea;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-out;
+    overflow-x: hidden; /* Prevent horizontal scroll if card overflows */
+}
+
+/* Content Container (Card) */
+.content {
+    width: 100%; /* Ensure it takes full width */
+    max-width: 900px; /* Set max width of the card */
+    min-width: 400px; /* Ensure the card has a minimum width */
+    padding: 50px; /* Increased padding inside the card */
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideIn 1s forwards;
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Login Heading */
+.content h1 {
+    font-size: 35px; /* Increased font size */
+    color: #1e3c72;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInText 1s ease-out;
+}
+
+/* Fade-in Animation for Text */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Input Field Styles */
+.field {
+    width: 100%;
+    height: 55px; /* Increased height of input fields */
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+/* Input Focus Styles */
+.field:focus {
+    border: 2px solid #4a90e2;
+    outline: none;
+    transform: scale(1.05);
+}
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Button */
+.input:hover {
+    background-color: #357ab7;
+    transform: scale(1.05);
+}
+
+/* Horizontal Line */
+hr {
+    margin: 30px 0;
+    border: 1px solid #ddd;
+}
+
+/* Label Styling */
+label {
+    font-size: 18px; /* Increased label font size */
+    color: #555;
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+}
+/* Show Password Icon */
+.show {
+    position: absolute;
+    top: 368px; /* Adjusted position */
+    right: 355px; /* Adjusted position to give space for checkbox */
+    color: #4a90e2;
+    cursor: pointer;
+}
+
+/* Show Password Checkbox */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    font-size: 16px;
+    position: absolute;
+    top: 375px; /* Align with the "show password" icon */
+    right: 10px; /* Position it next to the show password icon */
+}
+
+/* Checkbox Input */
+.checkbox-container input {
+    margin-right: 5px; /* Slight space between checkbox and label */
+}
+
+/* Mobile-Responsive Design */
+@media screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .field {
+        font-size: 14px;
+    }
+
+    .input {
+        font-size: 16px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    label {
+        font-size: 16px; /* Adjusted for smaller screens */
+    }
+}

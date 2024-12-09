@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.certificate {
+    width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.certificate h1 {
+    margin-bottom: 10px;
+    color: red;
+}
+
+.certificate p {
+    font-size: 18px;
+    line-height: 1.6;
+}

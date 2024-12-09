@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* width: 100%;
+    height: 100%; */
+    
+}
+body{
+    
+    width: 100%;
+    height: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    background-color:antiquewhite;
+}
+.contact{
+    margin-top: 40px;
+    width: 100%;
+    height:auto;
+    text-align: center;
+}
+
+.contact .fill{
+    width:100%;
+    height: auto;
+}
+.contact .fill h2{
+    padding-bottom: 15px;
+    color: red;
+    text-shadow:  0 5px 10px rgba(0,0,0,.3);
+    font-size: 35px;
+    margin: 10px 0px;
+}
+.contact .fill form{
+  width: 70%;
+  height: 100%;
+  box-sizing: content-box;
+  /* display: flex; */
+ /* flex-direction: column; */
+}
+.contact .fill .input{
+    width:90%;
+    height:60px;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+.contact .fill .input:focus{
+    outline: none;
+    border: 2px solid red;
+}
+
+.contact .fill .inputted:focus{
+    outline: none;
+    border: 2px solid red;
+}
+.contact .fill .inputted{
+    width:90%;
+    padding: 10px;
+    border-radius: 10px;
+    height:auto;
+    font-size: 20px;
+}
+.detail{
+    background-color: whitesmoke;
+}
+.detail h3,h4{
+    color: red;
+    cursor: pointer;
+}
+
+.detail p{
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+.Sbtn{
+    width: 50%;
+    height: 40px;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 10px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+@media (max-width:1080px)
+{
+    .contact .fill form{
+        width: 90%;
+    }
+}
